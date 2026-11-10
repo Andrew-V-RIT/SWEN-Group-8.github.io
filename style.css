@@ -76,3 +76,11 @@ form {
     border-radius: 20px;
     margin: 100px auto;}
 
+.email-button-container {
+    margin-top: 50px;
+    display: flex;            
+    justify-content: center;  
+    gap: 15px;                
+    width: 100%;             
+}
+
