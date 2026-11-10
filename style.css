@@ -169,7 +169,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .leader_header{
@@ -213,5 +212,25 @@
 .stat_text{
     color: #015369;
     margin-top: 0px;
+}
+
+.leader_table{
+    margin-top: 15px;
+    justify-self: center;
+    justify-items: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    border-collapse: collapse;
+}
+
+.leader_tr{
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.leader_td{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 5px;
 }
 
