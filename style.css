@@ -226,11 +226,22 @@
 .leader_tr{
     border: 2px solid black;
     border-radius: 3px;
+    align-items: center;
 }
 
 .leader_td{
     border: 2px solid black;
-    border-radius: 3px;
-    padding: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.rank {
+    width : 30px;
+    height : 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    align-self: center;
 }
 
