@@ -219,13 +219,13 @@
     justify-self: center;
     justify-items: center;
     border: 2px solid black;
-    border-radius: 3px;
+    
     border-collapse: collapse;
 }
 
 .leader_tr{
     border: 2px solid black;
-    border-radius: 3px;
+    
     align-items: center;
 }
 
@@ -233,6 +233,8 @@
     border: 2px solid black;
     text-align: center;
     align-items: center;
+    
+    padding: 5px;
 }
 
 .rank {
