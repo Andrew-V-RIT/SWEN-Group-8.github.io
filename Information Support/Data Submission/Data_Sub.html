@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraudFile - Data Submission</title>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <h1>Report a Scam</h1>
+        <p>Submit information about a suspected scammer.</p>
+
+        <div style="border-style: solid; border-color: black; border-radius: 15px; width: 400px; padding: 20px;">
+            <div style="margin: 15px 0px;">
+                <p>Phone Number: </p>
+                <input type="tel" placeholder="###-###-####" style="width: 95%; height: 30px; border-radius: 5px;">
+            </div>
+
+            <div style="margin: 15px 0px;">
+                <p>Type of Scam: </p>
+                <select style="width: 100%; height: 35px; border-radius: 5px;">
+                    <option>Phone Scam</option>
+                    <option>Text Message Scam</option>
+                    <option>Email Scam</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div style="margin: 15px 0px;">
+                <p>Description: </p>
+                <textarea placeholder="Describe what happened..." style="width: 95%; height: 120px; border-radius: 5px; resize: none;"></textarea>
+            </div>
+            
+            <div style="margin: 15px 0px;">
+                <p>Additional Evidence (Optional): </p>
+                <input type="file">
+            </div>
+
+            <div style="margin: 20px auto; display: flex; justify-content: center;">
+                <a href="Data_Sub_thx_for_report.html">
+                    <button style="font-size: larger; width: 150px; height: 40px; border-radius: 10px;">Submit Report</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
