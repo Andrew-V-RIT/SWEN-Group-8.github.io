@@ -84,3 +84,21 @@ form {
     width: 100%;             
 }
 
+#real-button {
+    background-color: rgb(19, 187, 67);
+}
+
+#fake-button {
+    background-color: firebrick;
+}
+
+.main-phone-call-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px
+}
+
+
