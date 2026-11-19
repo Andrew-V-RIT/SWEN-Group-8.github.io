@@ -249,11 +249,14 @@
 
 .dspd {
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
+    justify-content: center;
     padding: 20px;
-    width: 50%;
-    height: 260px;
+    width: 50vw;
+    height: 32vh;
     align-items: center;
+    border-radius: 20px;
+    
 }
 
 .dspd_nametag {
@@ -270,9 +273,13 @@
 .dspd_center {
     display: grid;
     position: absolute;
-    height: 360px;
-    width:300px;
-    top:130px;
-    left:462px;
+    border-radius: 20px;
+    height: 50vh;
+    width: 25vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
 }
 
