@@ -78,6 +78,14 @@
     margin: 100px auto;
 }
 
+.email-button-container {
+    margin-top: 50px;
+    display: flex;            
+    justify-content: center;  
+    gap: 15px;                
+    width: 100%;             
+}
+
 /*~~~~~~Account Page~~~~~~*/
 .update_info_button {
     display: inline-block;
