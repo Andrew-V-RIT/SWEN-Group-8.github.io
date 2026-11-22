@@ -93,16 +93,36 @@ form {
 }
 
 #help-message {
-    display:block;
+    display:none;
     padding: 0;
     margin: 0;
     width: 288px; 
     height: 216px;
 }
+#scam-pic {
+    display:none;
+    padding: 0;
+    margin: 0;
+
+}
+
+#info-block {
+    display:none;
+    padding: 0;
+    margin: 0;
+
+}
 .main-phone-call-container {
     min-height: 80vh;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px
+}
+.help-and-cam-button {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 24px
