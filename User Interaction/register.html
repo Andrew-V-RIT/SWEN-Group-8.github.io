@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>FraudFiles</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2><a class="home" href="../index.html">THE FRAUD FILES</a></h2>
+        <div class="navbarDIV"> 
+            <a class = "navbarA" href="account.html">Account</a>
+            <a class = "navbarA" href="">Forum</a>
+            <a class = "navbarA" href="leaderboard.html">Leaderboard</a>
+            <a class = "navbarA" href="">Database</a>
+            <a class = "navbarA" href="">Review Emails</a>
+        </div>
+        <div style="width: 200px;"></div>
+    </nav>
+
+    <form id="form" class="login_form">
+        <input class="login_feild" type="email" id="email" name="email" placeholder="Email" required>
+        <input class="login_feild" type="text" id="first" name="first" placeholder="First Name" required>
+        <input class="login_feild" type="text" id="last" name="last" placeholder="Last Name" required>
+        <input class="login_feild" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+        <input class="login_feild" type="text" id="user" name="user" placeholder="Username" required>
+        <input class="login_feild" type="password" id="pass" name="pass" placeholder="Password" required>
+        <button class="login" type="submit" id="register">Register</button>
+        <a class="register" href="login.html">Already have an account? Click here.</a>
+    </form>
+
+    <script>
+        const registerForm = document.getElementById('form');
+
+        registerForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            window.location.href = '../index.html';
+        });
+    </script>
+</body>
+</html>

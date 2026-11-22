@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+    <title>FraudFile - Data Submission</title>
+</head>
+
+<body style="background-color: #F0E0D6; display: flex; justify-content: center; align-items: center; gap: 20px; min-height: 85vh; margin: 0; padding: 10px; box-sizing: border-box; overflow-x: hidden;">
+    <!-- Logo -->
+    <a href="#Home">
+        <h1 style="position: absolute; top: 15px; left: 20px; font-family: 'Inter', sans-serif; font-size: 28px; color: black; margin: 0;">
+            FraudFiles<sup style="font-size: 12px;">TM</sup>
+        </h1>
+    </a>
+    
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <h1 style="font-family: 'Inter', sans-serif;">List of Suspected Scammers</h1>
+        <h3 style="font-family: 'Inter', sans-serif">Submit information about suspected scammer</h3>
+
+        <div style="background-color: #EDECE6; box-shadow: 25px 25px; border-style: solid; border-color: black; border-radius: 15px; width: 400px; padding: 20px;">
+            <div style="margin: 15px 0px;">
+                <p>Phone Number: </p>
+                <input type="tel" placeholder="###-###-####" style="width: 95%; height: 30px; border-radius: 5px;">
+            </div>
+
+            <div style="margin: 15px 0px;">
+                <p>Description: </p>
+                <textarea placeholder="Describe what happened..." style="width: 95%; height: 120px; border-radius: 5px; resize: none;"></textarea>
+            </div>
+            
+            <div style="margin: 15px 0px;">
+                <p>Additional Evidence (Optional): </p>
+                <input type="file">
+            </div>
+
+            <div style="margin: 20px auto; display: flex; justify-content: center;">
+                <a href="Data_Sub_thx_for_report.html">
+                    <button style="box-shadow: 10px 10px; font-size: larger; width: 150px; height: 40px; border-radius: 10px;">Submit Data</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

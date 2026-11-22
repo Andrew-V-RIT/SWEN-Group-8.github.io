@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>FraudFiles</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2><a class="home" href="../index.html">THE FRAUD FILES</a></h2>
+        <div class="navbarDIV"> 
+            <a class = "navbarA" href="account.html">Account</a>
+            <a class = "navbarA" href="">Forum</a>
+            <a class = "navbarA" href="leaderBoard.html">Leaderboard</a>
+            <a class = "navbarA" href="">Database</a>
+            <a class = "navbarA" href="">Review Emails</a>
+        </div>
+        <a class="login_button" href="login.html">Login</a>
+    </nav>
+
+    <form class="report_form">
+        <select class="report_dropdown">
+            <option selected disabled>--select a reason--</option>
+            <option>Harassment</option>
+            <option>Misinformation</option>
+            <option>Scammer</option>
+            <option>Breach of TOS</option>
+            <option>Other</option>
+        </select>
+        <textarea class="report_field" type="text" id="reason" name="reason" placeholder="Tell Us More" required></textarea>
+        <button class="report_button" type="submit">Report</button>
+    </form>
+
+</body>
+</html>
