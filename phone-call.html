@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FraudFiles</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <!--controls navbar logo-->
+        <h2 href="" class="home">THE FRAUD FILES</h2>
+        
+        <!--controls navbar Buttons-->
+        <div class="navbarDIV"> 
+            <a class = "navbarA" href="">Account</a>
+            <a class = "navbarA" href="">Forum</a>
+            <a class = "navbarA" href="">Leadership</a>
+            <a class = "navbarA" href="">Database</a>
+            <a class = "navbarA" href="">Review Emails</a>
+        </div>
+        
+        <!--controls navbar Log in/Sign Up Button-->
+        <a class="login_button" href="login.html">Login</a>
+    </nav>
+
+
+    <div class="main-phone-call-container">
+        <img src="images/Group Information.png" id="help-message">
+        <img src="images/scam pic.jpeg" id="scam-pic">
+        <div class="help-and-cam-button">
+            <button id="call-help" class="phone-button"  style="width: 200px; height: 75px;">Call Help</button>
+
+            <button id="reveal-camera" class="phone-button"  style="width: 200px; height: 75px;">Reveal Camera</button>
+        </div>
+        
+
+        <img style="width: 245px; height: 504px;" id="phone-image" src="images/phonecall.png">
+
+        <button id="counter-scam" class="phone-button"  style="width: 200px; height: 75px;">Counter Scam</button>
+
+        <p id="info-block">
+            Here is information about your current caller:<br>
+            Name: Michael Scott<br>
+            Address: 3260 College Rd<br>
+            Device: Chromebook<br>
+            IP Address: 193.179.143.52<br>
+            Credit Card Number:	3529593394726798<br>
+            Mother's Maiden Name: Johnson<br>
+            Birthday: July 26 2000<br>
+            Favorite Number: 643<br>
+        </p>
+    </div>
+
+    <script>
+        const cameraButton = document.getElementById("reveal-camera");
+        const cameraReveal = document.getElementById("scam-pic");
+
+        cameraButton.addEventListener("click", () => {
+            if (cameraReveal.style.display === "block") {
+                cameraReveal.style.display = "none";
+                cameraButton.textContent = "Reveal Camera";
+            } else {
+                cameraReveal.style.display = "block";
+                cameraButton.textContent = "Hide Camera";
+            }
+        });
+    </script>
+
+     <script>
+        const helpButton = document.getElementById("call-help");
+        const helpMessage = document.getElementById("help-message");
+
+        helpButton.addEventListener("click", () => {
+            if (helpMessage.style.display === "block") {
+                helpMessage.style.display = "none";
+                helpButton.textContent = "Call Help";
+            } else {
+                helpMessage.style.display = "block";
+                helpButton.textContent = "Hide Help";
+            }
+        });
+    </script>
+
+    <script>
+        const counterScamButton = document.getElementById("counter-scam");
+        const infoBlock = document.getElementById("info-block");
+
+        counterScamButton.addEventListener("click", () => {
+            if (infoBlock.style.display === "block") {
+                infoBlock.style.display = "none";
+                counterScamButton.textContent = "Counter Scam";
+            } else {
+                infoBlock.style.display = "block";
+                counterScamButton.textContent = "Stop Counter Scam";
+            }
+        });
+    </script>
+</body>
+</html>
