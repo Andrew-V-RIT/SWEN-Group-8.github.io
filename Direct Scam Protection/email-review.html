@@ -19,36 +19,50 @@
         </div>
         <a class="login_button" href="../User Interaction/login.html">Login</a>
     </nav>
-    <img id="email-image" src="../images/email1.png" width="500" height="360" style="display: block; margin: 0 auto;"/>
-    <div class="email-button-container">
+    <div class="whole-email-page">
+        <div class="main-email-section">
+            <img id="email-image" src="../images/email1.png" width="500" height="360" style="display: block; margin: 0 auto;"/>
+            <div class="email-button-container">
 
-        <button id="real-button" class="email-button"  style="width: 200px; height: 75px;">Real</button>
-        <button id="fake-button" class="email-button" style="width: 200px; height: 75px;">Fake</button>
+                <button id="real-button" class="email-button"  style="width: 200px; height: 75px;">Real</button>
+                <button id="fake-button" class="email-button" style="width: 200px; height: 75px;">Fake</button>
+
+                <script>
+
+                    const emails = [
+                        "../images/email1.png",
+                        "../images/email2.png",
+                        "../images/email3.png",
+                        "../images/email4.png",
+                    ];
+
+                    let currentIndex = 0;
+                    const imgElement = document.getElementById("email-image");
+                    const buttons = document.querySelectorAll(".email-button");
+
+                    function showNextImage() {
+                        currentIndex = (currentIndex + 1) % emails.length;
+                        imgElement.src = emails[currentIndex];
+                    }
+
+                    buttons.forEach((button) => {
+                        button.addEventListener("click", showNextImage);
+                    });
+                </script>
+            </div>
+        </div>
+
+        <button id="phone-button" style="width: 200px; height: 75px; align-self: flex-end;">Enter Phone Call</button>
 
         <script>
+        const phoneButton = document.getElementById("phone-button");
 
-            const emails = [
-                "../images/email1.png",
-                "../images/email2.png",
-                "../images/email3.png",
-                "../images/email4.png",
-            ];
+        phoneButton.addEventListener("click", () => {
+            window.location.href="../Direct Scam Protection/phone-call.html"
+        });
+    </script>
 
-            let currentIndex = 0;
-            const imgElement = document.getElementById("email-image");
-            const buttons = document.querySelectorAll(".email-button");
-
-            function showNextImage() {
-                currentIndex = (currentIndex + 1) % emails.length;
-                imgElement.src = emails[currentIndex];
-            }
-
-            buttons.forEach((button) => {
-                button.addEventListener("click", showNextImage);
-            });
-        </script>
     </div>
-    
 
 </body>
 </html>
