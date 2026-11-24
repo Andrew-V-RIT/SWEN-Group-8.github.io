@@ -269,8 +269,6 @@
 
 .leader_table{
     margin-top: 15px;
-    justify-self: center;
-    justify-items: center;
     border: 2px solid black;
     margin-inline: auto;
     border-collapse: collapse;
@@ -278,7 +276,6 @@
 
 .leader_tr{
     border: 2px solid black;
-    
     align-items: center;
 }
 
