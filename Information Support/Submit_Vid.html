@@ -51,13 +51,17 @@
                 </div>
 
                 <div style="margin: 20px auto; display: flex; justify-content: center;">
-                    <a href="/Information Support/Data Submission/Data_Sub_thx_for_report.html">
-                        <button style="box-shadow: 10px 10px; font-size: larger; width: 150px; height: 40px; border-radius: 10px;">Submit Video</button>
-                    </a>
+                    <button id="submit" style="box-shadow: 10px 10px; font-size: larger; width: 150px; height: 40px; border-radius: 10px;">Submit Video</button>
                 </div>
-
             </div>
         </div>
     </div>
+    <script>
+        const AmnestyButton = document.getElementById("submit");
+
+        AmnestyButton.addEventListener("click", () => {
+                window.location.href = "Data Submission/Data_Sub_thx_for_report.html";
+        });
+    </script>
 </body>
 </html>
