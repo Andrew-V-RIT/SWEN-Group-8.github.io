@@ -33,7 +33,11 @@
 
         <img style="width: 245px; height: 504px;" id="phone-image" src="../images/phonecall.png">
 
-        <button id="counter-scam" class="phone-button"  style="width: 200px; height: 75px;">Counter Scam</button>
+        <div class="help-and-cam-button">
+            <button id="counter-scam" class="phone-button"  style="width: 200px; height: 75px;">Counter Scam</button>
+
+            <button id="dspd" class="phone-button"  style="width: 200px; height: 75px;">DSPD Protocol</button>
+        </div>
 
         <p id="info-block">
             Here is information about your current caller:<br>
@@ -90,6 +94,14 @@
                 infoBlock.style.display = "block";
                 counterScamButton.textContent = "Stop Counter Scam";
             }
+        });
+    </script>
+
+    <script>
+        const dspdButton = document.getElementById("dspd");
+
+        dspdButton.addEventListener("click", () => {
+                window.location.href = "../User Interaction/dspd.html";
         });
     </script>
 </body>

@@ -349,3 +349,14 @@
     border-radius: 20px;
     margin: 100px auto;
 }
+
+.database_button{
+    background-color: #EDECE6;
+    box-shadow: 10px 10px;
+    font-size: larger;
+    width: 225px;
+    height: 55px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
