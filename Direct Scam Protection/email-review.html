@@ -51,7 +51,16 @@
             </div>
         </div>
 
-        <button id="phone-button" style="width: 200px; height: 75px; align-self: flex-end;" href="../Direct Scam Protection/phone-call.html">Enter Phone Call</button>
+        <button id="phone-button" style="width: 200px; height: 75px; align-self: flex-end;">Enter Phone Call</button>
+
+        <script>
+        const phoneButton = document.getElementById("phone-button");
+
+        phoneButton.addEventListener("click", () => {
+            window.location.href="../Direct Scam Protection/phone-call.html"
+        });
+    </script>
+
     </div>
 
 </body>
