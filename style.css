@@ -129,6 +129,10 @@
     justify-content: center;
     gap: 24px
 }
+.whole-email-page {
+    display:flex;
+    flex-direction: column;
+}
 
 /*~~~~~~Account Page~~~~~~*/
 .update_info_button {
