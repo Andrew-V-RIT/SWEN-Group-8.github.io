@@ -7,87 +7,94 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
-    <title>FraudFiles - Information Archive</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
-<body style="background-color: #F0E0D6; display: flex; justify-content: center; align-items: center; gap: 20px; min-height: 85vh; margin: 0; padding: 10px; box-sizing: border-box; overflow-x: hidden; font-family: 'Inter', sans-serif;">
-    <!-- Logo, CLICKABLE LINK TO HOME PAGE -->
-    <a href="#Home">
-        <h1 style="position: absolute; top: 15px; left: 20px; font-family: 'Inter', sans-serif; font-size: 28px; color: black; margin: 0;">
-            FraudFiles<sup style="font-size: 12px;">TM</sup>
-        </h1>
-    </a>
-
-    <!-- PUBLIC ARCHIVE -->
-    <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
-        <h1 style="color: darkgreen; text-align: center;">Public Archive</h1>
-        <div style="background-color: #EDECE6; border: 3px solid black; border-radius: 10px; box-shadow: 10px 10px; width: 100%; max-width: 625px; height: 475px; overflow-y: scroll; overflow-x: hidden;">
-
-            <!-- Archive 1 -->
-            <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
-                <h3 style="color: darkgreen; margin: 0;">[001] Phone Scams</h3>
-                <p>Scammers impersonating legitimate organizations through phone calls.</p>
-                <p style="font-weight: bold; color: darkgreen;"><strong style="color: black;">Status:</strong> Verified</p>
-            </div>
-
-            <!-- Archive 2 -->
-            <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
-                <h3 style="color: darkgreen; margin: 0;">[002] Phishing Emails</h3>
-                <p>Fraudulent emails attempting to obtain sensitive information.</p>
-                <p style="font-weight: bold; color: darkgreen;"><strong style="color: black;">Status: </strong>Verified</p>
-            </div>
-
-            <!-- Archive 3 -->
-            <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
-                <h3 style="color: darkgreen; margin: 0;">[003] Scammer Archetypes</h3>
-                <p>Common behaviors, methods, and patterns found across scam reports.</p>
-                <p style="font-weight: bold; color: orange;"><strong style="color: black;">Status: </strong>Ongoing</p>
-            </div>
-
-            <!-- Archive 4 -->
-            <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
-                <h3 style="color: darkgreen; margin: 0;">[004] Links</h3>
-                <p>Confirmed and Verified Scammer and Suspiciousness.</p>
-                <p style="font-weight: bold; color: darkgreen;"><strong style="color: black;">Status: </strong>Verified</p>
-            </div>
+<body style="background-color: #F0E0D6;">
+    <nav class="navbar">
+        <h2 href="" class="home">THE FRAUD FILES</h2>
+        <div class="navbarDIV"> 
+            <a class = "navbarA" href="../User Interaction/account.html">Account</a>
+            <a class = "navbarA" href="../Information Support\Forum.html">Forum</a>
+            <a class = "navbarA" href="../User Interaction/leaderboard.html">Leaderboard</a>
+            <a class = "navbarA" href="../Information Support/Info_Archives.html">Database</a>
+            <a class = "navbarA" href="../Direct Scam Protection/email-review.html">Review Emails</a>
         </div>
-        <p style="font-family: 'Inter', sans-serif; margin-top: 45px; text-align: center;">
-            Publicly available information and confirmed findings.
-        </p>
-    </div>
+        <a class="login_button" href="User Interaction/login.html">Login</a>
+    </nav>
 
+    <div style="background-color: #F0E0D6; display: flex; justify-content: center; align-items: center; gap: 20px; min-height: 85vh; margin: 0; padding: 10px; box-sizing: border-box; overflow-x: hidden; font-family: 'Inter', sans-serif;">
+        <!-- PUBLIC ARCHIVE -->
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+            <h1 style="color: darkgreen; text-align: center;">Public Archive</h1>
+            <div style="background-color: #EDECE6; border: 3px solid black; border-radius: 10px; box-shadow: 10px 10px; width: 100%; max-width: 625px; height: 475px; overflow-y: scroll; overflow-x: hidden;">
 
-    <!-- PRIVATE ARCHIVE -->
-    <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
-        <h1 style="color: darkred; text-align: center;">Private Archive</h1>
-        <div style="background-color: #EDECE6; border: 3px solid black; border-radius: 10px; box-shadow: 10px 10px; width: 100%; max-width: 625px; height: 475px; overflow-y: auto; overflow-x: hidden;">
+                <!-- Archive 1 -->
+                <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
+                    <h3 style="color: darkgreen; margin: 0;">[001] Phone Scams</h3>
+                    <p>Scammers impersonating legitimate organizations through phone calls.</p>
+                    <p style="font-weight: bold; color: darkgreen;"><strong style="color: black;">Status:</strong> Verified</p>
+                </div>
 
-            <!-- Private Arch 1 -->
-            <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
-                <h3 style="color: darkred; margin: 0;">[PRIVATE-001] Unconfirmed Tips</h3>
-                <p>Possible connections between reported scam operations.</p>
-                <p style="font-weight: bold; color: black;"><strong style="color: black;">Status: </strong>Under Investigation</p>
+                <!-- Archive 2 -->
+                <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
+                    <h3 style="color: darkgreen; margin: 0;">[002] Phishing Emails</h3>
+                    <p>Fraudulent emails attempting to obtain sensitive information.</p>
+                    <p style="font-weight: bold; color: darkgreen;"><strong style="color: black;">Status: </strong>Verified</p>
+                </div>
+
+                <!-- Archive 3 -->
+                <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
+                    <h3 style="color: darkgreen; margin: 0;">[003] Scammer Archetypes</h3>
+                    <p>Common behaviors, methods, and patterns found across scam reports.</p>
+                    <p style="font-weight: bold; color: orange;"><strong style="color: black;">Status: </strong>Ongoing</p>
+                </div>
+
+                <!-- Archive 4 -->
+                <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
+                    <h3 style="color: darkgreen; margin: 0;">[004] Links</h3>
+                    <p>Confirmed and Verified Scammer and Suspiciousness.</p>
+                    <p style="font-weight: bold; color: darkgreen;"><strong style="color: black;">Status: </strong>Verified</p>
+                </div>
             </div>
-
-            <!-- Private Arch 2 -->
-            <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
-                <h3 style="color: darkred; margin: 0;">[PRIVATE-002] Unconfirmed Tips</h3>
-                <p>Unverified associations and suspected organizational structures.</p>
-                <p style="font-weight: bold; color: black;"><strong style="color: black;">Status: </strong>Under Investigation</p>
-            </div>            
-
-            <!-- Private Arch 3 -->
-            <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
-                <h3 style="color: darkred; margin: 0;">[PRIVATE-003] Unconfirmed Tips</h3>
-                <p>Sensitive records requiring authorization before access.</p>
-                <p style="font-weight: bold; color: black;"><strong style="color: black;">Status: </strong>Under Investigation</p>
-            </div>            
+            <p style="font-family: 'Inter', sans-serif; margin-top: 45px; text-align: center;">
+                Publicly available information and confirmed findings.
+            </p>
         </div>
 
-        <div style="margin-top: 25px;">
-            <button style="background-color: #EDECE6; box-shadow: 10px 10px; font-size: larger; width: 225px; height: 55px; border: 2px solid black; border-radius: 10px;">
-                Access With Key
-            </button>
+
+        <!-- PRIVATE ARCHIVE -->
+        <div style="width: 50%; display: flex; flex-direction: column; align-items: center;">
+            <h1 style="color: darkred; text-align: center;">Private Archive</h1>
+            <div style="background-color: #EDECE6; border: 3px solid black; border-radius: 10px; box-shadow: 10px 10px; width: 100%; max-width: 625px; height: 475px; overflow-y: auto; overflow-x: hidden;">
+
+                <!-- Private Arch 1 -->
+                <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
+                    <h3 style="color: darkred; margin: 0;">[PRIVATE-001] Unconfirmed Tips</h3>
+                    <p>Possible connections between reported scam operations.</p>
+                    <p style="font-weight: bold; color: black;"><strong style="color: black;">Status: </strong>Under Investigation</p>
+                </div>
+
+                <!-- Private Arch 2 -->
+                <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
+                    <h3 style="color: darkred; margin: 0;">[PRIVATE-002] Unconfirmed Tips</h3>
+                    <p>Unverified associations and suspected organizational structures.</p>
+                    <p style="font-weight: bold; color: black;"><strong style="color: black;">Status: </strong>Under Investigation</p>
+                </div>            
+
+                <!-- Private Arch 3 -->
+                <div style="margin: 15px; border: 1px solid black; border-radius: 15px; padding: 15px;">
+                    <h3 style="color: darkred; margin: 0;">[PRIVATE-003] Unconfirmed Tips</h3>
+                    <p>Sensitive records requiring authorization before access.</p>
+                    <p style="font-weight: bold; color: black;"><strong style="color: black;">Status: </strong>Under Investigation</p>
+                </div>            
+            </div>
+
+            <div style="margin-top: 25px;">
+                <button style="background-color: #EDECE6; box-shadow: 10px 10px; font-size: larger; width: 225px; height: 55px; border: 2px solid black; border-radius: 10px;">
+                    Access With Key
+                </button>
+            </div>
         </div>
     </div>
 </body>
