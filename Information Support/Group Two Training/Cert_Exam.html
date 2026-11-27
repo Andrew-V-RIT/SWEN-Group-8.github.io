@@ -5,75 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&display=swap" rel="stylesheet">
+    <link href="../../style.css" rel="stylesheet">
     <title>FraudFiles - Anti-Scam Exam</title>
 </head>
 
-<body style="background-color: #F0E0D6; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; font-family: 'Inter', sans-serif;">
+<body style="background-color: #F0E0D6;">
+    <nav class="navbar">
+        <h2 href="" class="home">THE FRAUD FILES</h2>
+        <div class="navbarDIV"> 
+            <a class = "navbarA" href="../../User Interaction/account.html">Account</a>
+            <a class = "navbarA" href="../../Information Support\Forum.html">Forum</a>
+            <a class = "navbarA" href="../../User Interaction/leaderboard.html">Leaderboard</a>
+            <a class = "navbarA" href="../../Information Support/Info_Archives.html">Database</a>
+            <a class = "navbarA" href="../../Direct Scam Protection/email-review.html">Review Emails</a>
+        </div>
+        <a class="login_button" href="User Interaction/login.html">Login</a>
+    </nav>
+    <div style="background-color: #F0E0D6; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box; font-family: 'Inter', sans-serif;">
+        <div style="width: 100%; max-width: 625px;">
+            </a>
+                <h1 style="color: darkgreen; text-align: center;">FraudFiles - Anti-Scam Exam</h1>
+                <div style="background-color: #EDECE6; border: 3px solid black; border-radius: 10px; box-shadow: 10px 10px; padding: 20px;">
+                    <p>Answer the following two questions.</p>
 
-    <div style="width: 100%; max-width: 625px;">
-        <!-- Logo, CLICKABLE LINK TO HOME PAGE -->
-        <a href="../../index.html">
-            <h1 style="position: absolute; top: 15px; left: 20px; font-family: 'Inter', sans-serif; font-size: 28px; color: black; margin: 0;">
-                FraudFiles<sup style="font-size: 12px;">TM</sup>
-            </h1>
-        </a>
-        
-        <h1 style="color: darkgreen; text-align: center;">FraudFiles - Anti-Scam Exam</h1>
-        <div style="background-color: #EDECE6; border: 3px solid black; border-radius: 10px; box-shadow: 10px 10px; padding: 20px;">
-            <p>Answer the following two questions.</p>
+                <!-- Question 1 -->
+                <div style="border: 1px solid black; border-radius: 15px; padding: 15px; margin-bottom: 20px;">
+                    <h3 style="color: darkgreen;">Question 1</h3>
+                    <p>You receive an email asking you to verify your bank account through an unfamiliar link. What should you do?</p>
+                    <label><input type="radio" name="q1" value="A"> Click the link immediately</label><br><br>
+                    <label><input type="radio" name="q1" value="B"> Enter your banking password</label><br><br>
+                    <label><input type="radio" name="q1" value="C"> Contact your bank through its official website</label><br><br>
+                    <label><input type="radio" name="q1" value="D"> Forward the email to friends</label>
+                </div>
 
-            <!-- Question 1 -->
-            <div style="border: 1px solid black; border-radius: 15px; padding: 15px; margin-bottom: 20px;">
-                <h3 style="color: darkgreen;">Question 1</h3>
-                <p>You receive an email asking you to verify your bank account through an unfamiliar link. What should you do?</p>
-                <label><input type="radio" name="q1" value="A"> Click the link immediately</label><br><br>
-                <label><input type="radio" name="q1" value="B"> Enter your banking password</label><br><br>
-                <label><input type="radio" name="q1" value="C"> Contact your bank through its official website</label><br><br>
-                <label><input type="radio" name="q1" value="D"> Forward the email to friends</label>
-            </div>
+                <!-- Question 2 -->
+                <div style="border: 1px solid black; border-radius: 15px; padding: 15px; margin-bottom: 20px;">
+                    <h3 style="color: darkgreen;">Question 2</h3>
+                    <p>What is phishing?</p>
+                    <label><input type="radio" name="q2" value="A"> A method of improving internet speed</label><br><br>
+                    <label><input type="radio" name="q2" value="B"> A fraudulent attempt to steal sensitive information</label><br><br>
+                    <label><input type="radio" name="q2" value="C"> A type of antivirus software</label><br><br>
+                    <label><input type="radio" name="q2" value="D"> A method of encrypting files</label>
+                </div>
 
-            <!-- Question 2 -->
-            <div style="border: 1px solid black; border-radius: 15px; padding: 15px; margin-bottom: 20px;">
-                <h3 style="color: darkgreen;">Question 2</h3>
-                <p>What is phishing?</p>
-                <label><input type="radio" name="q2" value="A"> A method of improving internet speed</label><br><br>
-                <label><input type="radio" name="q2" value="B"> A fraudulent attempt to steal sensitive information</label><br><br>
-                <label><input type="radio" name="q2" value="C"> A type of antivirus software</label><br><br>
-                <label><input type="radio" name="q2" value="D"> A method of encrypting files</label>
-            </div>
+                <!-- Submit -->
+                <div style="text-align: center;">
+                    <button id="result" onclick="getCert()" style="background-color: #F0E0D6; border: 2px solid black; border-radius: 10px; padding: 12px 25px; font-size: 16px; cursor: pointer;">
+                        Submit Exam
+                    </button>
+                    <script>
+                    function getCert() {
+                            let q1 = document.querySelector('input[name="q1"]:checked');
+                            let q2 = document.querySelector('input[name="q2"]:checked');
 
-            <!-- Submit -->
-            <div style="text-align: center;">
-                <button id="result" onclick="getCert()" style="background-color: #F0E0D6; border: 2px solid black; border-radius: 10px; padding: 12px 25px; font-size: 16px; cursor: pointer;">
-                    Submit Exam
-                </button>
-                <script>
-                function getCert() {
-                        let q1 = document.querySelector('input[name="q1"]:checked');
-                        let q2 = document.querySelector('input[name="q2"]:checked');
+                            if (!q1 || !q2) {
+                                document.getElementById("result")
+                                innerText = "Please answer both questions.";
+                                return;
+                            }
+                
+                            let score = 0;
+                            if (q1.value === "C") {
+                                score++;
+                            }
+                            if (q2.value === "B") {
+                                score++;
+                            }
 
-                        if (!q1 || !q2) {
-                            document.getElementById("result")
-                            innerText = "Please answer both questions.";
-                            return;
+                            if (score == 2) {
+                                document.getElementById("result").addEventListener('click', function() {});
+                                document.getElementById("result")
+                                innerText = "Continue";
+                                window.location.href = "Cert_page.html";
+                            }
                         }
-            
-                        let score = 0;
-                        if (q1.value === "C") {
-                            score++;
-                        }
-                        if (q2.value === "B") {
-                            score++;
-                        }
-
-                        if (score == 2) {
-                            document.getElementById("result").addEventListener('click', function() {});
-                            document.getElementById("result")
-                            innerText = "Continue";
-                            window.location.href = "Cert_page.html";
-                        }
-                    }
-                </script>
+                    </script>
+                </div>
             </div>
         </div>
     </div>
